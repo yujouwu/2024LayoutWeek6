@@ -1,0 +1,8 @@
+.badge{
+  letter-spacing: 0.1em; // 10%
+  background: $primary-300;
+  &:hover, &:active{
+    background: $primary-400;
+    color: white;
+  }
+}

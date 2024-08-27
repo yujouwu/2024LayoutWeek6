@@ -1,0 +1,34 @@
+// google font - Noto Serif TC
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap');
+// google font - Newsreader
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+// Bootstrap icons
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+// swiper
+@import url("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css");
+
+
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import './utils/variables-custom';   // 自定義 變數
+// 1. 元件(進階)* 或 Bootstrap
+@import "../../node_modules/bootstrap";
+@import "./components/buttons";
+@import "./components/badge";
+@import "./components/form";
+
+// 2. 雜項(進階)*
+@import "./utils/utilities-custom";   // 自定義 utilities
+@import "bootstrap/scss/utilities/api";
+
+
+// 3. 共用樣式
+@import './base/base';
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+// 4. 分頁樣式
+@import './pages/index.scss';
+
+// 其他
+@import "./vendors/swiper";

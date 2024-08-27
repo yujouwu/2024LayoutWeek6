@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+  <!-- swiper  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <main>
+      <!-- banner  -->
+      <section class="container px-0 section">
+        <div class="position-relative">
+          <picture>
+            <source srcset="../assets/images/banner.png" media="(min-width: 992px)">
+            <img class="w-100" src="../assets/images/banner-sm.png" alt="banner 形象圖">
+          </picture>
+          <div class="banner-text position-absolute py-8 px-4 px-lg-9 py-lg-0 ">
+            <h3 class="fs-6 fs-md-5 mb-1 mb-md-2">獻給新世代的生活風格誌</h3>
+            <h2 class="banner-title fw-bold mb-4 mb-md-5">一起探索生活的無限可能</h2>
+            <button class="btn btn-accent-200 fs-md-4" type="button">馬上訂閱<i class="bi bi-arrow-right ms-2"></i></button>
+          </div>
+        </div>
+      </section>
+      <!-- 熱門主題  -->
+      <section class="container section">
+        <h4 class="section-title">熱門主題</h4>
+        <ul class="list-unstyled row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-1 gy-lg-4">
+          <li class="col">
+            <a href="#" class="theme-card position-relative">
+              <picture>
+                <source srcset="../assets/images/theme-1.png" media="(min-width: 768px)">
+                <img class="w-100" src="../assets/images/theme-1-sm.png" alt="城市漫遊者 形象圖">
+              </picture>
+              <h5 class="theme-card-title position-absolute">城市漫遊者</h5>
+            </a>
+          </li>
+          <li class="col">
+            <a href="#" class="theme-card position-relative">
+              <picture>
+                <source srcset="../assets/images/theme-2.png" media="(min-width: 768px)">
+                <img class="w-100" src="../assets/images/theme-2-sm.png" alt="秘境尋蹤人 形象圖">
+              </picture>
+              <h5 class="theme-card-title position-absolute">秘境尋蹤人</h5>
+            </a>
+            </div>
+          <li class="col">
+            <a href="#" class="theme-card position-relative">
+              <picture>
+                <source srcset="../assets/images/theme-3.png" media="(min-width: 768px)">
+                <img class="w-100" src="../assets/images/theme-3-sm.png" alt="品味設計家 形象圖">
+              </picture>
+              <h5 class="theme-card-title position-absolute">品味設計家</h5>
+            </a>
+          </li>
+          <li class="col">
+            <a href="#" class="theme-card position-relative">
+              <picture>
+                <source srcset="../assets/images/theme-4.png" media="(min-width: 768px)">
+                <img class="w-100" src="../assets/images/theme-4-sm.png" alt="美食探險記 形象圖">
+              </picture>
+              <h5 class="theme-card-title position-absolute">美食探險記</h5>
+            </a>
+          </li>
+          <li class="col">
+            <a href="#" class="theme-card position-relative">
+              <picture>
+                <source srcset="../assets/images/theme-5.png" media="(min-width: 768px)">
+                <img class="w-100" src="../assets/images/theme-5-sm.png" alt="美學建築誌 形象圖">
+              </picture>
+              <h5 class="theme-card-title position-absolute">美學建築誌</h5>
+            </a>
+          </li>
+          <li class="col">
+            <a href="#" class="theme-card position-relative">
+              <picture>
+                <source srcset="../assets/images/theme-6.png" media="(min-width: 768px)">
+                <img class="w-100" src="../assets/images/theme-6-sm.png" alt="慢活生活行 形象圖">
+              </picture>
+              <h5 class="theme-card-title position-absolute">慢活生活行</h5>
+            </a>
+          </li>
+          <li class="col">
+            <a href="#" class="theme-card position-relative">
+              <picture>
+                <source srcset="../assets/images/theme-7.png" media="(min-width: 768px)">
+                <img class="w-100" src="../assets/images/theme-7-sm.png" alt="工藝匠心賞 形象圖">
+              </picture>
+              <h5 class="theme-card-title position-absolute">工藝匠心賞</h5>
+            </a>
+          </li>
+          <li class="col">
+            <a href="#" class="theme-card position-relative">
+              <picture>
+                <source srcset="../assets/images/theme-8.png" media="(min-width: 768px)">
+                <img class="w-100" src="../assets/images/theme-1-sm.png" alt="時尚先鋒派 形象圖">
+              </picture>
+              <h5 class="theme-card-title position-absolute">時尚先鋒派</h5>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- 精選文章 -->
+      <section class="container section">
+        <h4 class="section-title">精選文章</h4>
+        <div class="row flex-lg-row-reverse">
+          <!-- Swiper 容器  -->
+          <div class="col-lg-8">
+            <!-- Swiper -->
+            <div class="swiper mySwiper h-100">
+              <div class="swiper-wrapper">
+                <!-- swiper slide 1 -->
+                <div class="swiper-slide">
+                  <div class="h-100 d-flex flex-column">
+                    <picture>
+                      <source srcset="../assets/images/articles-1.png" media="(min-width: 992px)">
+                      <img class="w-100 mb-5" src="../assets/images/articles-1-sm.png" alt="私人島嶼的露營奇遇記 形象圖">
+                    </picture>
+                    <h5 class="text-truncate mb-1">私人島嶼的露營奇遇記</h5>
+                    <p class="mb-auto">
+                      遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                    </p>
+                    <h5 href="#" class="link-accent-200 fw-bold py-1 my-5">Read More</h5>
+                  </div>
+                </div>
+                <!-- swiper slide 2 -->
+                <div class="swiper-slide">
+                  <div class="h-100 d-flex flex-column">
+                    <picture>
+                      <source srcset="../assets/images/articles-2.png" media="(min-width: 992px)">
+                      <img class="w-100 mb-5" src="../assets/images/articles-2-sm.png" alt="窺探米其林三星主廚的絕密手藝 形象圖">
+                    </picture>
+                    <h5 class="text-truncate mb-1">窺探米其林三星主廚的絕密手藝</h5>
+                    <p class="mb-auto">
+                      在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                    </p>
+                    <h5 href="#" class="link-accent-200 fw-bold py-1 my-5">Read More</h5>
+                  </div>
+                </div>
+                <!-- swiper slide 3 -->
+                <div class="swiper-slide">
+                  <div class="h-100 d-flex flex-column">
+                    <picture>
+                      <source srcset="https://fakeimg.pl/404x200/" media="(min-width: 992px)">
+                      <img class="card-img-top" src="https://fakeimg.pl/324x200/" alt="3 形象圖">
+                    </picture>
+                    <h5 class="text-truncate mb-1">3</h5>
+                    <p class="mb-auto">
+                      遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</p>
+                    <h5 href="#" class="link-accent-200 fw-bold py-1 my-5">Read More</h5>
+                  </div>
+                </div>
+                <!-- swiper slide 4 -->
+                <div class="swiper-slide">
+                  <div class="h-100 d-flex flex-column">
+                    <picture>
+                      <source srcset="https://fakeimg.pl/404x200/" media="(min-width: 992px)">
+                      <img class="w-100 mb-5" src="https://fakeimg.pl/324x200/" alt="4 形象圖">
+                    </picture>
+                    <h5 class="text-truncate mb-1">4</h5>
+                    <p class="mb-auto">
+                      遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</p>
+                    <h5 href="#" class="link-accent-200 fw-bold py-1 my-5">Read More</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- swiper pagination 容器 -->
+          <div
+            class="col-lg-4 d-flex justify-content-between align-items-center flex-lg-column justify-content-lg-end align-items-lg-start mt-7">
+            <!-- swiper pagination  -->
+            <div class="swiper-pagination-custom w-auto pb-lg-3"></div>
+            <div class="swiper-pagination d-flex justify-content-between mt-lg-3">
+              <div class="swiper-prev d-inline-block">
+                <i class="bi bi-arrow-left"></i>
+              </div>
+              <div class="swiper-next d-inline-block">
+                <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 母親節強檔活動 -->
+      <section class="bg-primary-200 overflow-hidden">
+        <div class="hito-content container section d-flex flex-column align-items-center position-relative">
+          <h6 class="text-accent-200 fw-bold mb-2 text-lg-primary-400">\ 母親節強檔活動 /</h6>
+          <h4 class="section-title">家庭訂閱方案限時 7 折</h4>
+          <ul class="list-unstyled d-flex flex-column gap-3">
+            <li><i class="bi bi-check-lg me-2"></i>每月最新文章無限閱讀</li>
+            <li><i class="bi bi-check-lg me-2"></i>專屬會員限定內容</li>
+            <li><i class="bi bi-check-lg me-2"></i>定期電子報</li>
+            <li><i class="bi bi-check-lg me-2"></i>年度精選禮物</li>
+            <li><i class="bi bi-check-lg me-2"></i>24 /7 優先客戶服務</li>
+            <li><i class="bi bi-check-lg me-2"></i>為每個成員量身打造專屬行程</li>
+          </ul>
+          <button class="btn btn-accent-200" type="button">我想了解</button>
+        </div>
+      </section>
+      </div>
+    </main>
+    <div class="container">
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+              required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">State</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="validationCustom05" required>
+          <div class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+      <div class="mb-3">
+        <a href="" class="disabled">a tag</a>
+        <label for="exampleFormControlInput1" class="form-label disabled" disabled>Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" disabled>
+      </div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
+      <button class="btn btn-gray-100 btn-lg" type="button">按鈕</button>
+      <button class="btn btn-gray-100 btn-lg" type="button" disabled>按鈕</button>
+      <button class="btn btn-accent-200 btn-lg" type="button">按鈕</button>
+      <button class="btn btn-accent-200 btn-lg" type="button" disabled>按鈕</button>
+      <button class="btn btn-accent-200" type="button">按鈕</button>
+      <button class="btn btn-accent-200 btn-sm" type="button">按鈕</button>
+      <br>
+      <a href="#" class="fs-6">
+        <span class="badge fs-6">秘境尋蹤</span>
+      </a>
+      <h2 class="fs-2">熱門主題</h2>
+      <div class="row row-cols-1 row-cols-lg-4 gy-1 gy-lg-4">
+        <div class="col">
+          <picture>
+            <source srcset="../assets/images/theme-1.png" media="(min-width: 992px)">
+            <img class="w-100 rounded-top-left rounded-bottom-right" src="../assets/images/theme-1-sm.png" alt="形象圖">
+          </picture>
+          <h5>城市漫遊者</h5>
+        </div>
+        <div class="col">
+          <picture>
+            <source srcset="../assets/images/theme-1.png" media="(min-width: 992px)">
+            <img class="w-100" src="../assets/images/theme-1-sm.png" alt="秘境尋蹤人 形象圖">
+          </picture>
+          <h5>秘境尋蹤人</h5>
+        </div>
+        <div class="col">
+          <picture>
+            <source srcset="../assets/images/theme-1.png" media="(min-width: 992px)">
+            <img class="w-100" src="../assets/images/theme-1-sm.png" alt="品味設計家 形象圖">
+          </picture>
+          <h5>品味設計家</h5>
+        </div>
+        <div class="col">
+          <picture>
+            <source srcset="../assets/images/theme-1.png" media="(min-width: 992px)">
+            <img class="w-100" src="../assets/images/theme-1-sm.png" alt="美食探險記 形象圖">
+          </picture>
+          <h5>美食探險記</h5>
+        </div>
+        <div class="col">
+          <picture>
+            <source srcset="../assets/images/theme-1.png" media="(min-width: 992px)">
+            <img class="w-100" src="../assets/images/theme-1-sm.png" alt="美學建築誌 形象圖">
+          </picture>
+          <h5>美學建築誌</h5>
+        </div>
+        <div class="col">
+          <picture>
+            <source srcset="../assets/images/theme-1.png" media="(min-width: 992px)">
+            <img class="w-100" src="../assets/images/theme-1-sm.png" alt="慢活生活行 形象圖">
+          </picture>
+          <h5>慢活生活行</h5>
+        </div>
+        <div class="col">
+          <picture>
+            <source srcset="../assets/images/theme-1.png" media="(min-width: 992px)">
+            <img class="w-100" src="../assets/images/theme-1-sm.png" alt="工藝匠心賞 形象圖">
+          </picture>
+          <h5>工藝匠心賞</h5>
+        </div>
+        <div class="col">
+          <picture>
+            <source srcset="../assets/images/theme-1.png" media="(min-width: 992px)">
+            <img class="w-100" src="../assets/images/theme-1-sm.png" alt="時尚先鋒派 形象圖">
+          </picture>
+          <h5>時尚先鋒派</h5>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+      <%- include('./layout/jQuery'); -%>
+        <script type="module" src="../main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+          // init Swiper:
+          const swiper = new Swiper(".swiper", {
+            // 一次呈現幾張,
+            slidesPerView: 1.1,
+            // 一個群組內有幾張投影片,
+            slidesPerGroup: 1,
+            spaceBetween: 24,
+
+            navigation: {
+              nextEl: ".swiper-next",
+              prevEl: ".swiper-prev",
+            },
+            // 分頁,
+            pagination: {
+              el: ".swiper-pagination-custom",
+              type: "fraction",
+            },
+            breakpoints: {
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 48,
+              }
+            }
+          });
+
+        </script>
+</body>
+
+</html>

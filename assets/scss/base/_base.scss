@@ -1,0 +1,21 @@
+*, *::before, *::after{
+  outline: 1px solid red;
+}
+.ff-newsreader{
+  font-family: "Newsreader", serif;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a{
+  display: inline-block;
+  // color: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.1em;   // 10%
+}
+p{
+  letter-spacing: 0.05em;  //  5%
+}

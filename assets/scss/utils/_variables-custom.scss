@@ -410,7 +410,8 @@ $escaped-characters: (
 
 $enable-caret:                true !default;
 $enable-rounded:              true !default;
-$enable-shadows:              false !default;
+// $enable-shadows:              false !default;
+$enable-shadows:              true !default; // *custom
 $enable-gradients:            false !default;
 $enable-transitions:          true !default;
 $enable-reduced-motion:       true !default;
@@ -440,7 +441,8 @@ $prefix:                      $variable-prefix !default;
 // The gradient which is added to components if `$enable-gradients` is `true`
 // This gradient is also added to elements with `.bg-gradient`
 // scss-docs-start variable-gradient
-$gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
+// $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
+$gradient: linear-gradient(to top, rgba($neutral-600, 1), rgba($neutral-600, .05)) !default;  // *custom
 // scss-docs-end variable-gradient
 
 // Spacing
@@ -459,16 +461,20 @@ $spacers: (
   // 4: $spacer * 1.5,
   // 5: $spacer * 3,
   0: 0,
+  '0-5': $spacer * 0.25,   // 4px *custom
   1: $spacer * 0.5,   // 8px *custom
+  '1-5': $spacer * 0.625,   // 10px *custom
   2: $spacer * 0.75,  // 12px *custom
   3: $spacer,         // 16px *custom
   4: $spacer * 1.25,  // 20px *custom
   5: $spacer * 1.5,   // 24px *custom
+  '5-5': $spacer * 1.75,   // 28px *custom
   6: $spacer * 2.25,  // 36px *custom
   7: $spacer * 2.5,   // 40px *custom
   8: $spacer * 3,     // 48px *custom
   9: $spacer * 3.75,  // 60px *custom
   10: $spacer * 5,    // 80px *custom
+  11: $spacer * 5,    // 100px *custom
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -607,8 +613,10 @@ $border-color-translucent:    rgba($black, .175) !default;
 $border-radius:               .375rem !default;  // 6px
 $border-radius-sm:            .25rem !default;  // 4px
 $border-radius-lg:            .5rem !default; // 8px
-$border-radius-xl:            1rem !default;  // 16px
-$border-radius-xxl:           2rem !default; // 32px
+// $border-radius-xl:            1rem !default;  // 16px
+$border-radius-xl:            .75rem !default;  // 12px *custom
+// $border-radius-xxl:           2rem !default; // 32px
+$border-radius-xxl:           1.25rem !default; // 20px *custom
 $border-radius-pill:          50rem !default; // 800px
 // scss-docs-end border-radius-variables
 // fusv-disable
@@ -692,7 +700,8 @@ $font-weight-bolder:          900 !default;  // *custom
 $font-weight-base:            $font-weight-semibold !default;  // *custom
 
 $line-height-base:            1.5 !default;
-$line-height-sm:              1.25 !default;
+// $line-height-sm:              1.25 !default;
+$line-height-sm:              1.2 !default; // *custom
 $line-height-lg:              2 !default;
 
 $h1-font-size:                $font-size-base * 2.5 !default; // 40px
@@ -731,13 +740,15 @@ $display-font-sizes: (
   2: 4.5rem,
   3: 4rem,
   4: 3.5rem,
-  5: 3rem,
+  // 5: 3rem,
+  5: 3.25rem, // *custom
   6: 2.5rem
 ) !default;
 
 $display-font-family: null !default;
 $display-font-style:  null !default;
-$display-font-weight: 300 !default;
+// $display-font-weight: 300 !default;
+$display-font-weight: 900 !default; // *custom
 $display-line-height: $headings-line-height !default;
 // scss-docs-end display-headings
 
@@ -891,7 +902,8 @@ $btn-padding-y:               .75rem !default;  // 12px *custom
 $btn-padding-x:               1.25rem !default;  // 20px *custom
 $btn-font-family:             $input-btn-font-family !default;
 $btn-font-size:               $input-btn-font-size !default;
-$btn-line-height:             $input-btn-line-height !default;
+// $btn-line-height:             $input-btn-line-height !default;
+$btn-line-height:             $line-height-sm !default; // *custom
 $btn-white-space:             null !default; // Set to `nowrap` to prevent text wrapping
 
 $btn-padding-y-sm:            $input-btn-padding-y-sm !default;
@@ -904,11 +916,13 @@ $btn-padding-y-lg:            1rem !default;  // 16px *custom
 $btn-padding-x-lg:            1.5rem !default;  // 24px *custom
 $btn-font-size-lg:            $input-btn-font-size-lg !default;
 
-$btn-border-width:            $input-btn-border-width !default;
+// $btn-border-width:            $input-btn-border-width !default;
+$btn-border-width:            0 !default; // *custom
 
 // $btn-font-weight:             $font-weight-normal !default;
 $btn-font-weight:             $font-weight-bold !default;  // *custom
-$btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
+// $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
+$btn-box-shadow:              0 !default; // *custom
 $btn-focus-width:             $input-btn-focus-width !default;
 $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
 // $btn-disabled-opacity:        .65 !default;
@@ -1432,21 +1446,28 @@ $placeholder-opacity-min:           .2 !default;
 // scss-docs-start card-variables
 $card-spacer-y:                     $spacer !default;
 $card-spacer-x:                     $spacer !default;
-$card-title-spacer-y:               $spacer * .5 !default;
-$card-title-color:                  null !default;
+// $card-title-spacer-y:               $spacer * .5 !default;
+$card-title-spacer-y:               12px !default; // *custom
+// $card-title-color:                  null !default;
+$card-title-color:                  $accent-200 !default; // *custom
 $card-subtitle-color:               null !default;
-$card-border-width:                 var(--#{$prefix}border-width) !default;
+// $card-border-width:                 var(--#{$prefix}border-width) !default;
+$card-border-width:                 0 !default; // *custom
 $card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
-$card-border-radius:                var(--#{$prefix}border-radius) !default;
-$card-box-shadow:                   null !default;
-$card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
+// $card-border-radius:                var(--#{$prefix}border-radius) !default;
+$card-border-radius:                12px !default; // *custom
+// $card-box-shadow:                   null !default;
+$card-box-shadow:                   $box-shadow !default; // *custom
+// $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
+$card-inner-border-radius:          $border-radius-sm !default; // *custom
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
 $card-cap-padding-x:                $card-spacer-x !default;
 $card-cap-bg:                       rgba(var(--#{$prefix}body-color-rgb), .03) !default;
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
 $card-color:                        null !default;
-$card-bg:                           var(--#{$prefix}body-bg) !default;
+// $card-bg:                           var(--#{$prefix}body-bg) !default;
+$card-bg:                           white !default; // *custom
 $card-img-overlay-padding:          $spacer !default;
 $card-group-margin:                 $grid-gutter-width * .5 !default;
 // scss-docs-end card-variables
@@ -1675,10 +1696,13 @@ $progress-bar-transition:           width .6s ease !default;
 
 // scss-docs-start list-group-variables
 $list-group-color:                  var(--#{$prefix}body-color) !default;
-$list-group-bg:                     var(--#{$prefix}body-bg) !default;
+// $list-group-bg:                     var(--#{$prefix}body-bg) !default;
+$list-group-bg:                     inherit !default; // *custom
 $list-group-border-color:           var(--#{$prefix}border-color) !default;
-$list-group-border-width:           var(--#{$prefix}border-width) !default;
-$list-group-border-radius:          var(--#{$prefix}border-radius) !default;
+// $list-group-border-width:           var(--#{$prefix}border-width) !default;
+$list-group-border-width:           0 !default; // *custom
+// $list-group-border-radius:          var(--#{$prefix}border-radius) !default;
+$list-group-border-radius:          12px !default;  // *custom
 
 $list-group-item-padding-y:         $spacer * .5 !default;
 $list-group-item-padding-x:         $spacer !default;
@@ -1687,9 +1711,12 @@ $list-group-item-bg-scale:          -80% !default; // Deprecated in v5.3.0
 $list-group-item-color-scale:       40% !default; // Deprecated in v5.3.0
 // fusv-enable
 
-$list-group-hover-bg:               var(--#{$prefix}tertiary-bg) !default;
-$list-group-active-color:           $component-active-color !default;
-$list-group-active-bg:              $component-active-bg !default;
+// $list-group-hover-bg:               var(--#{$prefix}tertiary-bg) !default;
+$list-group-hover-bg:               $accent-100 !default;  // *custom
+// $list-group-active-color:           $component-active-color !default;
+$list-group-active-color:           $neutral-600 !default; // *custom
+// $list-group-active-bg:              $component-active-bg !default;
+$list-group-active-bg:              $accent-100 !default; // *custom
 $list-group-active-border-color:    $list-group-active-bg !default;
 
 $list-group-disabled-color:         var(--#{$prefix}secondary-color) !default;

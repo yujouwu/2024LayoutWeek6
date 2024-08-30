@@ -1,7 +1,9 @@
-.swiper{
+.article .swiper{
   &-slide{
     border-bottom: 1px solid $neutral-500;
   }
+}
+.swiper{
   &-pagination{
     width: 232px;
     position: relative;

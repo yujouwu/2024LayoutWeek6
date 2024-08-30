@@ -1,0 +1,22 @@
+.package-title{
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  color: $primary-400;
+  margin-bottom: 24px;
+  text-align: center;
+  @include media-breakpoint-up (md){
+    font-weight: 900;
+    font-style: 20px;
+    margin-bottom: 16px;
+  }
+}
+.package-price{
+  font-family: "Newsreader";
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 0.1em;
+  @include media-breakpoint-up (md){
+    font-size: 40px;
+  }
+}

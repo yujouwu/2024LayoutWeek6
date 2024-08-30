@@ -24,11 +24,13 @@
 
 // 3. 共用樣式
 @import './base/base';
+@import './base/type';
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
 // 4. 分頁樣式
 @import './pages/index.scss';
+@import './pages/subscribe';
 
 // 其他
 @import "./vendors/swiper";

@@ -1,5 +1,5 @@
 *, *::before, *::after{
-  outline: 1px solid red;
+  //outline: 1px solid red;
 }
 .ff-newsreader{
   font-family: "Newsreader", serif;
@@ -10,10 +10,11 @@ img{
   display: block;
 }
 a{
-  display: inline-block;
+  // display: inline-block;
   // color: inherit;
+  display: block;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, a {
   letter-spacing: 0.1em;   // 10%
 }
 p{

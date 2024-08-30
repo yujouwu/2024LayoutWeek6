@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>index</title>
+  <title>Vivre 首頁</title>
   <!-- swiper  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
@@ -23,7 +23,8 @@
           <div class="banner-text position-absolute py-8 px-4 px-lg-9 py-lg-0 ">
             <h3 class="fs-6 fs-md-5 mb-1 mb-md-2">獻給新世代的生活風格誌</h3>
             <h2 class="banner-title fw-bold mb-4 mb-md-5">一起探索生活的無限可能</h2>
-            <button class="btn btn-accent-200 fs-md-4" type="button">馬上訂閱<i class="bi bi-arrow-right ms-2"></i></button>
+            <a href="subscribe.html" class="btn btn-accent-200 fs-md-4 py-lg-3 px-lg-5" role="button">馬上訂閱<i
+                class="bi bi-arrow-right ms-2"></i></a>
           </div>
         </div>
       </section>
@@ -32,7 +33,7 @@
         <h4 class="section-title">熱門主題</h4>
         <ul class="list-unstyled row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-1 gy-lg-4">
           <li class="col">
-            <a href="#" class="theme-card position-relative">
+            <a href="#" class="theme-card hover-cover position-relative">
               <picture>
                 <source srcset="../assets/images/theme-1.png" media="(min-width: 768px)">
                 <img class="w-100" src="../assets/images/theme-1-sm.png" alt="城市漫遊者 形象圖">
@@ -41,7 +42,7 @@
             </a>
           </li>
           <li class="col">
-            <a href="#" class="theme-card position-relative">
+            <a href="#" class="theme-card hover-cover position-relative">
               <picture>
                 <source srcset="../assets/images/theme-2.png" media="(min-width: 768px)">
                 <img class="w-100" src="../assets/images/theme-2-sm.png" alt="秘境尋蹤人 形象圖">
@@ -50,7 +51,7 @@
             </a>
             </div>
           <li class="col">
-            <a href="#" class="theme-card position-relative">
+            <a href="#" class="theme-card hover-cover position-relative">
               <picture>
                 <source srcset="../assets/images/theme-3.png" media="(min-width: 768px)">
                 <img class="w-100" src="../assets/images/theme-3-sm.png" alt="品味設計家 形象圖">
@@ -59,7 +60,7 @@
             </a>
           </li>
           <li class="col">
-            <a href="#" class="theme-card position-relative">
+            <a href="#" class="theme-card hover-cover position-relative">
               <picture>
                 <source srcset="../assets/images/theme-4.png" media="(min-width: 768px)">
                 <img class="w-100" src="../assets/images/theme-4-sm.png" alt="美食探險記 形象圖">
@@ -68,7 +69,7 @@
             </a>
           </li>
           <li class="col">
-            <a href="#" class="theme-card position-relative">
+            <a href="#" class="theme-card hover-cover position-relative">
               <picture>
                 <source srcset="../assets/images/theme-5.png" media="(min-width: 768px)">
                 <img class="w-100" src="../assets/images/theme-5-sm.png" alt="美學建築誌 形象圖">
@@ -77,7 +78,7 @@
             </a>
           </li>
           <li class="col">
-            <a href="#" class="theme-card position-relative">
+            <a href="#" class="theme-card hover-cover position-relative">
               <picture>
                 <source srcset="../assets/images/theme-6.png" media="(min-width: 768px)">
                 <img class="w-100" src="../assets/images/theme-6-sm.png" alt="慢活生活行 形象圖">
@@ -86,7 +87,7 @@
             </a>
           </li>
           <li class="col">
-            <a href="#" class="theme-card position-relative">
+            <a href="#" class="theme-card hover-cover position-relative">
               <picture>
                 <source srcset="../assets/images/theme-7.png" media="(min-width: 768px)">
                 <img class="w-100" src="../assets/images/theme-7-sm.png" alt="工藝匠心賞 形象圖">
@@ -95,7 +96,7 @@
             </a>
           </li>
           <li class="col">
-            <a href="#" class="theme-card position-relative">
+            <a href="#" class="theme-card hover-cover position-relative">
               <picture>
                 <source srcset="../assets/images/theme-8.png" media="(min-width: 768px)">
                 <img class="w-100" src="../assets/images/theme-1-sm.png" alt="時尚先鋒派 形象圖">
@@ -106,17 +107,17 @@
         </ul>
       </section>
       <!-- 精選文章 -->
-      <section class="container section">
+      <section class="article container section">
         <h4 class="section-title">精選文章</h4>
         <div class="row flex-lg-row-reverse">
           <!-- Swiper 容器  -->
           <div class="col-lg-8">
             <!-- Swiper -->
-            <div class="swiper mySwiper h-100">
+            <div class="swiper mySwiper h-100 articleSwiper">
               <div class="swiper-wrapper">
                 <!-- swiper slide 1 -->
-                <div class="swiper-slide">
-                  <div class="h-100 d-flex flex-column">
+                <div class="swiper-slide position-relative">
+                  <div class="h-100 d-flex flex-column ">
                     <picture>
                       <source srcset="../assets/images/articles-1.png" media="(min-width: 992px)">
                       <img class="w-100 mb-5" src="../assets/images/articles-1-sm.png" alt="私人島嶼的露營奇遇記 形象圖">
@@ -125,11 +126,11 @@
                     <p class="mb-auto">
                       遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
                     </p>
-                    <h5 href="#" class="link-accent-200 fw-bold py-1 my-5">Read More</h5>
+                    <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5 stretched-link">Read More</a>
                   </div>
                 </div>
                 <!-- swiper slide 2 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide position-relative">
                   <div class="h-100 d-flex flex-column">
                     <picture>
                       <source srcset="../assets/images/articles-2.png" media="(min-width: 992px)">
@@ -139,24 +140,27 @@
                     <p class="mb-auto">
                       在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
                     </p>
-                    <h5 href="#" class="link-accent-200 fw-bold py-1 my-5">Read More</h5>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5 stretched-link">Read More</a>
+                      <a href="#" class="fs-6"><span class="badge fs-6">會員專屬</span></a>
+                    </div>
                   </div>
                 </div>
                 <!-- swiper slide 3 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide position-relative">
                   <div class="h-100 d-flex flex-column">
                     <picture>
                       <source srcset="https://fakeimg.pl/404x200/" media="(min-width: 992px)">
-                      <img class="card-img-top" src="https://fakeimg.pl/324x200/" alt="3 形象圖">
+                      <img class="w-100 mb-5" src="https://fakeimg.pl/324x200/" alt="3 形象圖">
                     </picture>
                     <h5 class="text-truncate mb-1">3</h5>
                     <p class="mb-auto">
                       遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</p>
-                    <h5 href="#" class="link-accent-200 fw-bold py-1 my-5">Read More</h5>
+                    <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5 stretched-link">Read More</a>
                   </div>
                 </div>
                 <!-- swiper slide 4 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide position-relative">
                   <div class="h-100 d-flex flex-column">
                     <picture>
                       <source srcset="https://fakeimg.pl/404x200/" media="(min-width: 992px)">
@@ -165,7 +169,33 @@
                     <h5 class="text-truncate mb-1">4</h5>
                     <p class="mb-auto">
                       遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</p>
-                    <h5 href="#" class="link-accent-200 fw-bold py-1 my-5">Read More</h5>
+                    <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5 stretched-link">Read More</a>
+                  </div>
+                </div>
+                <!-- swiper slide 5 -->
+                <div class="swiper-slide position-relative">
+                  <div class="h-100 d-flex flex-column">
+                    <picture>
+                      <source srcset="https://fakeimg.pl/404x200/" media="(min-width: 992px)">
+                      <img class="w-100 mb-5" src="https://fakeimg.pl/324x200/" alt="4 形象圖">
+                    </picture>
+                    <h5 class="text-truncate mb-1">5</h5>
+                    <p class="mb-auto">
+                      遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</p>
+                    <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5 stretched-link">Read More</a>
+                  </div>
+                </div>
+                <!-- swiper slide 6 -->
+                <div class="swiper-slide position-relative">
+                  <div class="h-100 d-flex flex-column">
+                    <picture>
+                      <source srcset="https://fakeimg.pl/404x200/" media="(min-width: 992px)">
+                      <img class="w-100 mb-5" src="https://fakeimg.pl/324x200/" alt="4 形象圖">
+                    </picture>
+                    <h5 class="text-truncate mb-1">6</h5>
+                    <p class="mb-auto">
+                      遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</p>
+                    <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5 stretched-link">Read More</a>
                   </div>
                 </div>
               </div>
@@ -203,191 +233,658 @@
           <button class="btn btn-accent-200" type="button">我想了解</button>
         </div>
       </section>
+      <!-- 大家都在看 -->
+      <section class="container section">
+        <h4 class="section-title">大家都在看</h4>
+        <!-- 大家都在看 手機板 -->
+        <div class="row d-xl-none">
+          <div class="col pe-0">
+            <div class="swiper mySwiper h-100 defaultSwiper">
+              <div class="swiper-wrapper">
+                <!-- slide 1 -->
+                <div class="swiper-slide">
+                  <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">酒精路跑地圖</h5>
+                      <ul class="card-text list-unstyled d-flex flex-column gap-1">
+                        <li><a href="#">｜城市酒吧人氣榜,盤點當紅熱門酒吧</a></li>
+                        <li><a href="#">｜你要的調酒師在這裡！五月全台酒...</a></li>
+                        <li><a href="#">｜台南老宅手工酒藏,尋味百年人文釀意</a></li>
+                      </ul>
+                      <img src="../assets/images/hots-1-sm.png" class="card-img-top mb-5" alt="...">
+                      <div class="d-flex gap-1-5 flex-wrap">
+                        <a href="#" class="fs-6"><span class="badge fs-6">#夜貓行程</span></a>
+                        <a href="#" class="fs-6"><span class="badge fs-6">#barhopping</span></a>
+                        <a href="#" class="fs-6"><span class="badge fs-6">#全台酒吧</span></a>
+                      </div>
+                      <div class="text-center mt-auto">
+                        <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5 w-100">View More<i
+                            class="bi bi-arrow-right ms-2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slide 2  -->
+                <div class="swiper-slide">
+                  <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">台北拉麵圖鑑</h5>
+                      <ul class="card-text list-unstyled d-flex flex-column gap-1">
+                        <li><a href="#">｜城市酒吧人氣榜,盤點當紅熱門酒吧</a></li>
+                        <li><a href="#">｜你要的調酒師在這裡！五月全台酒...</a></li>
+                        <li><a href="#">｜台南老宅手工酒藏,尋味百年人文釀意</a></li>
+                      </ul>
+                      <img src="../assets/images/hots-2-sm.png" class="card-img-top mb-5" alt="...">
+                      <div class="d-flex gap-1-5 flex-wrap">
+                        <a href="#" class="fs-6"><span class="badge fs-6">#雞白湯</span></a>
+                        <a href="#" class="fs-6"><span class="badge fs-6">#拉麵</span></a>
+                        <a href="#" class="fs-6"><span class="badge fs-6">#台北美食</span></a>
+                      </div>
+                      <div class="text-center mt-auto">
+                        <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5 w-100">View More<i
+                            class="bi bi-arrow-right ms-2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slide 3  -->
+                <div class="swiper-slide">
+                  <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">海島自由行</h5>
+                      <ul class="card-text list-unstyled d-flex flex-column gap-1">
+                        <li><a href="#">｜私島慢活島嶼生活 - 在熱帶天堂品...</a></li>
+                        <li><a href="#">｜海島漂流記 - 在陽光、沙灘和比基...</a></li>
+                        <li><a href="#">｜島嶼蹤跡 - 揭開加勒比海上世外桃...</a></li>
+                      </ul>
+                      <img src="../assets/images/hots-3-sm.png" class="card-img-top mb-5" alt="...">
+                      <div class="d-flex gap-1-5 flex-wrap">
+                        <a href="#" class="fs-6"><span class="badge fs-6">#熱帶國家</span></a>
+                        <a href="#" class="fs-6"><span class="badge fs-6">#海邊</span></a>
+                        <a href="#" class="fs-6"><span class="badge fs-6">#無敵海景</span></a>
+                      </div>
+                      <div class="text-center mt-auto">
+                        <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5 w-100">View More<i
+                            class="bi bi-arrow-right ms-2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slide 4  -->
+                <div class="swiper-slide">
+                  <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">短天數出國推薦</h5>
+                      <ul class="card-text list-unstyled d-flex flex-column gap-1">
+                        <li><a href="#">｜72小時東京遊走 - 當個時尚東京通</a></li>
+                        <li><a href="#">｜48小時曼谷遊玩全攻略 </a></li>
+                        <li><a href="#">｜三天兩夜賞櫻微醺東京</a></li>
+                      </ul>
+                      <img src="../assets/images/hots-4-sm.png" class="card-img-top mb-5" alt="...">
+                      <div class="d-flex gap-1-5 flex-wrap">
+                        <a href="#" class="fs-6"><span class="badge fs-6">#說走就走</span></a>
+                        <a href="#" class="fs-6"><span class="badge fs-6">#出國玩</span></a>
+                        <a href="#" class="fs-6"><span class="badge fs-6">#東亞</span></a>
+                      </div>
+                      <div class="text-center mt-auto">
+                        <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5 w-100">View More<i
+                            class="bi bi-arrow-right ms-2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slide 5  -->
+                <div class="swiper-slide">
+                  <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">週末露營趣</h5>
+                      <ul class="card-text list-unstyled d-flex flex-column gap-1">
+                        <li><a href="#">｜週末說走就走露營記</a></li>
+                        <li><a href="#">｜城市野營日記</a></li>
+                        <li><a href="#">｜和寵物去露營 - 大自然之旅的雙倍...</a></li>
+                      </ul>
+                      <img src="../assets/images/hots-5-sm.png" class="card-img-top mb-5" alt="...">
+                      <div class="d-flex gap-1-5 flex-wrap">
+                        <a href="#" class="fs-6"><span class="badge fs-6">#戶外</span></a>
+                        <a href="#" class="fs-6"><span class="badge fs-6">#露營控</span></a>
+                        <a href="#" class="fs-6"><span class="badge fs-6">#凹豆</span></a>
+                      </div>
+                      <div class="text-center mt-auto">
+                        <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5 w-100">View More<i
+                            class="bi bi-arrow-right ms-2"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 大家都在看 桌機板 -->
+        <div class="row d-none d-xl-flex">
+          <div class="col-3">
+            <div class="list-group bg-white p-5 gap-5" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action active" id="hots-list-1-list" data-bs-toggle="list"
+                href="#hots-list-1" role="tab" aria-controls="hots-list-1"><i class="bi bi-dot"></i>酒精路跑地圖</a>
+              <a class="list-group-item list-group-item-action" id="hots-list-2-list" data-bs-toggle="list"
+                href="#hots-list-2" role="tab" aria-controls="hots-list-2"><i class="bi bi-dot"></i>台北拉麵圖鑑</a>
+              <a class="list-group-item list-group-item-action" id="hots-list-3-list" data-bs-toggle="list"
+                href="#hots-list-3" role="tab" aria-controls="hots-list-3"><i class="bi bi-dot"></i>海島自由行</a>
+              <a class="list-group-item list-group-item-action" id="hots-list-4-list" data-bs-toggle="list"
+                href="#hots-list-4" role="tab" aria-controls="hots-list-4"><i class="bi bi-dot"></i>短天數出國推薦</a>
+              <a class="list-group-item list-group-item-action" id="hots-list-5-list" data-bs-toggle="list"
+                href="#hots-list-5" role="tab" aria-controls="hots-list-5"><i class="bi bi-dot"></i>週末露營趣</a>
+            </div>
+          </div>
+          <div class="col-9">
+            <div class="tab-content" id="nav-tabContent">
+              <!-- hot 1  -->
+              <div class="tab-pane fade show active" id="hots-list-1" role="tabpanel"
+                aria-labelledby="hots-list-1-list">
+                <div class="card h-100 p-7">
+                  <div class="card-body d-flex flex-column p-5">
+                    <h5 class="card-title">酒精路跑地圖</h5>
+                    <ul class="card-text list-unstyled d-flex flex-column gap-1">
+                      <li><a href="#">｜城市酒吧人氣榜,盤點當紅熱門酒吧</a></li>
+                      <li><a href="#">｜你要的調酒師在這裡！五月全台酒...</a></li>
+                      <li><a href="#">｜台南老宅手工酒藏,尋味百年人文釀意</a></li>
+                    </ul>
+                  </div>
+                  <ul class="d-flex gap-0-5 mx-auto list-unstyled">
+                    <li><img src="../assets/images/hots-1.png" class="rounded-start-5 rounded-end-1" alt="hots-1 image">
+                    </li>
+                    <li><img src="../assets/images/hots-2.png" class="rounded-1" alt="hots-2 image"></li>
+                    <li><img src="../assets/images/hots-3.png" class="rounded-1" alt="hots-3 image"></li>
+                    <li><img src="../assets/images/hots-4.png" class="rounded-end-5" alt="hots-4 image"></li>
+                  </ul>
+                  <div class="p-5 d-flex align-items-center justify-content-between">
+                    <div class="d-flex gap-1-5 flex-wrap">
+                      <a href="#" class="fs-6"><span class="badge fs-6">#夜貓行程</span></a>
+                      <a href="#" class="fs-6"><span class="badge fs-6">#barhopping</span></a>
+                      <a href="#" class="fs-6"><span class="badge fs-6">#全台酒吧</span></a>
+                    </div>
+                    <div class="text-center mt-auto">
+                      <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5 w-100">View More<i
+                          class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- hot 2  -->
+              <div class="tab-pane fade" id="hots-list-2" role="tabpanel" aria-labelledby="hots-list-2-list">
+                <div class="card h-100 p-7">
+                  <div class="card-body d-flex flex-column p-5">
+                    <h5 class="card-title">台北拉麵圖鑑</h5>
+                    <ul class="card-text list-unstyled d-flex flex-column gap-1">
+                      <li><a href="#">｜城市酒吧人氣榜,盤點當紅熱門酒吧</a></li>
+                      <li><a href="#">｜你要的調酒師在這裡！五月全台酒...</a></li>
+                      <li><a href="#">｜台南老宅手工酒藏,尋味百年人文釀意</a></li>
+                    </ul>
+                  </div>
+                  <ul class="d-flex gap-0-5 mx-auto list-unstyled">
+                    <li>
+                      <img src="../assets/images/hots-2-sm.png"
+                        class="rounded-start-5 rounded-end-1 object-fit-cover h-100" width="212px" alt="hots-1 image">
+                    </li>
+                    <li><img src="../assets/images/hots-2.png" class="rounded-1" alt="hots-2 image"></li>
+                    <li><img src="../assets/images/hots-3.png" class="rounded-1" alt="hots-3 image"></li>
+                    <li><img src="../assets/images/hots-4.png" class="rounded-end-5" alt="hots-4 image"></li>
+                  </ul>
+                  <div class="p-5 d-flex align-items-center justify-content-between">
+                    <div class="d-flex gap-1-5 flex-wrap">
+                      <a href="#" class="fs-6"><span class="badge fs-6">#雞白湯</span></a>
+                      <a href="#" class="fs-6"><span class="badge fs-6">#拉麵</span></a>
+                      <a href="#" class="fs-6"><span class="badge fs-6">#台北美食</span></a>
+                    </div>
+                    <div class="text-center mt-auto">
+                      <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5 w-100">View More<i
+                          class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- hot 3  -->
+              <div class="tab-pane fade" id="hots-list-3" role="tabpanel" aria-labelledby="hots-list-3-list">
+                <div class="card h-100 p-7">
+                  <div class="card-body d-flex flex-column p-5">
+                    <h5 class="card-title">海島自由行</h5>
+                    <ul class="card-text list-unstyled d-flex flex-column gap-1">
+                      <li><a href="#">｜私島慢活島嶼生活 - 在熱帶天堂品...</a></li>
+                      <li><a href="#">｜海島漂流記 - 在陽光、沙灘和比基...</a></li>
+                      <li><a href="#">｜島嶼蹤跡 - 揭開加勒比海上世外桃...</a></li>
+                    </ul>
+                  </div>
+                  <ul class="d-flex gap-0-5 mx-auto list-unstyled">
+                    <li>
+                      <img src="../assets/images/hots-3-sm.png"
+                        class="rounded-start-5 rounded-end-1 object-fit-cover h-100" width="212px" alt="hots-1 image">
+                    </li>
+                    <li><img src="../assets/images/hots-2.png" class="rounded-1" alt="hots-2 image"></li>
+                    <li><img src="../assets/images/hots-3.png" class="rounded-1" alt="hots-3 image"></li>
+                    <li><img src="../assets/images/hots-4.png" class="rounded-end-5" alt="hots-4 image"></li>
+                  </ul>
+                  <div class="p-5 d-flex align-items-center justify-content-between">
+                    <div class="d-flex gap-1-5 flex-wrap">
+                      <a href="#" class="fs-6"><span class="badge fs-6">#熱帶國家</span></a>
+                      <a href="#" class="fs-6"><span class="badge fs-6">#海邊</span></a>
+                      <a href="#" class="fs-6"><span class="badge fs-6">#無敵海景</span></a>
+                    </div>
+                    <div class="text-center mt-auto">
+                      <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5 w-100">View More<i
+                          class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- hot 4  -->
+              <div class="tab-pane fade" id="hots-list-4" role="tabpanel" aria-labelledby="hots-list-4-list">
+                <div class="card h-100 p-7">
+                  <div class="card-body d-flex flex-column p-5">
+                    <h5 class="card-title">短天數出國推薦</h5>
+                    <ul class="card-text list-unstyled d-flex flex-column gap-1">
+                      <li><a href="#">｜72小時東京遊走 - 當個時尚東京通</a></li>
+                      <li><a href="#">｜48小時曼谷遊玩全攻略 </a></li>
+                      <li><a href="#">｜三天兩夜賞櫻微醺東京</a></li>
+                    </ul>
+                  </div>
+                  <ul class="d-flex gap-0-5 mx-auto list-unstyled">
+                    <li>
+                      <img src="../assets/images/hots-4-sm.png"
+                        class="rounded-start-5 rounded-end-1 object-fit-cover h-100" width="212px" alt="hots-1 image">
+                    </li>
+                    <li><img src="../assets/images/hots-2.png" class="rounded-1" alt="hots-2 image"></li>
+                    <li><img src="../assets/images/hots-3.png" class="rounded-1" alt="hots-3 image"></li>
+                    <li><img src="../assets/images/hots-4.png" class="rounded-end-5" alt="hots-4 image"></li>
+                  </ul>
+                  <div class="p-5 d-flex align-items-center justify-content-between">
+                    <div class="d-flex gap-1-5 flex-wrap">
+                      <a href="#" class="fs-6"><span class="badge fs-6">#說走就走</span></a>
+                      <a href="#" class="fs-6"><span class="badge fs-6">#出國玩</span></a>
+                      <a href="#" class="fs-6"><span class="badge fs-6">#東亞</span></a>
+                    </div>
+                    <div class="text-center mt-auto">
+                      <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5 w-100">View More<i
+                          class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- hot 5  -->
+              <div class="tab-pane fade" id="hots-list-5" role="tabpanel" aria-labelledby="hots-list-5-list">
+                <div class="card h-100 p-7">
+                  <div class="card-body d-flex flex-column p-5">
+                    <h5 class="card-title">週末露營趣</h5>
+                    <ul class="card-text list-unstyled d-flex flex-column gap-1">
+                      <li><a href="#">｜週末說走就走露營記</a></li>
+                      <li><a href="#">｜城市野營日記</a></li>
+                      <li><a href="#">｜和寵物去露營 - 大自然之旅的雙倍...</a></li>
+                    </ul>
+                  </div>
+                  <ul class="d-flex gap-0-5 mx-auto list-unstyled">
+                    <li>
+                      <img src="../assets/images/hots-5-sm.png"
+                        class="rounded-start-5 rounded-end-1 object-fit-cover h-100" width="212px" alt="hots-1 image">
+                    </li>
+                    <li><img src="../assets/images/hots-2.png" class="rounded-1" alt="hots-2 image"></li>
+                    <li><img src="../assets/images/hots-3.png" class="rounded-1" alt="hots-3 image"></li>
+                    <li><img src="../assets/images/hots-4.png" class="rounded-end-5" alt="hots-4 image"></li>
+                  </ul>
+                  <div class="p-5 d-flex align-items-center justify-content-between">
+                    <div class="d-flex gap-1-5 flex-wrap">
+                      <a href="#" class="fs-6"><span class="badge fs-6">#戶外</span></a>
+                      <a href="#" class="fs-6"><span class="badge fs-6">#露營控</span></a>
+                      <a href="#" class="fs-6"><span class="badge fs-6">#凹豆</span></a>
+                    </div>
+                    <div class="text-center mt-auto">
+                      <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5 w-100">View More<i
+                          class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 品味生活 -->
+      <section class="life section container">
+        <div class="d-flex justify-content-between align-items-center mb-5 mb-lg-7">
+          <h4 class="section-title mb-0">品味生活</h4>
+          <!-- swiper pagination 容器 -->
+          <div class="d-none d-lg-flex justify-content-between align-items-center">
+            <!-- swiper pagination  -->
+            <div class="swiper-pagination-custom w-auto"></div>
+            <div class="swiper-pagination d-flex justify-content-between">
+              <div class="swiper-prev d-inline-block">
+                <i class="bi bi-arrow-left"></i>
+              </div>
+              <div class="swiper-next d-inline-block">
+                <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row flex-lg-row-reverse">
+          <!-- Swiper 容器  -->
+          <div class="col">
+            <!-- Swiper -->
+            <div class="swiper mySwiper h-xl-100 lifeSwiper">
+              <div class="swiper-wrapper">
+                <!-- swiper slide 1 -->
+                <div class="swiper-slide">
+                  <div class="h-100 d-flex flex-column ">
+                    <h5 class="display-6 display-lg-5 text-primary-400">食.</h5>
+                    <picture>
+                      <source srcset="../assets/images/life-1.png" media="(min-width: 992px)">
+                      <img class="w-100 mb-5" src="../assets/images/life-1-sm.png" alt="品味生活 食">
+                    </picture>
+                    <ul class="list-unstyled d-flex flex-column gap-1 mb-auto">
+                      <li><a href="#" class="fw-bold fs-lg-5 fw-lg-bolder">｜米其林三星主廚的那些絕活傳奇</a></li>
+                      <li><a href="#" class="fw-bold fs-lg-5 fw-lg-bolder">｜探秘成都的地道川味秘技與魅力</a></li>
+                      <li><a href="#" class="fw-bold fs-lg-5 fw-lg-bolder">｜義大利釀酒師對於酒的堅持執著</a></li>
+                    </ul>
+                    <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5  text-center">View More<i
+                        class="bi bi-arrow-right ms-2"></i></a>
+                  </div>
+                </div>
+                <!-- swiper slide 2 -->
+                <div class="swiper-slide position-relative">
+                  <div class="h-100 d-flex flex-column ">
+                    <h5 class="display-6 display-lg-5 text-primary-400">藝.</h5>
+                    <picture>
+                      <source srcset="../assets/images/life-2.png" media="(min-width: 992px)">
+                      <img class="w-100 mb-5" src="../assets/images/life-2-sm.png" alt="品味生活 食">
+                    </picture>
+                    <ul class="list-unstyled d-flex flex-column gap-1 mb-auto">
+                      <li><a href="#" class="fw-bold fs-lg-5 fw-lg-bolder">｜解構教主級時裝設計大師的獨特美學</a></li>
+                      <li><a href="#" class="fw-bold fs-lg-5 fw-lg-bolder">｜當代攝影師鏡頭中的光影離奇</a></li>
+                      <li><a href="#" class="fw-bold fs-lg-5 fw-lg-bolder">｜帶你穿縮中世紀，夏季文藝復興展</a></li>
+                    </ul>
+                    <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5  text-center">View More<i
+                        class="bi bi-arrow-right ms-2"></i></a>
+                  </div>
+                </div>
+                <!-- swiper slide 3 -->
+                <div class="swiper-slide position-relative">
+                  <div class="h-100 d-flex flex-column ">
+                    <h5 class="display-6 display-lg-5 text-primary-400">旅.</h5>
+                    <picture>
+                      <source srcset="../assets/images/life-3.png" media="(min-width: 992px)">
+                      <img class="w-100 mb-5" src="../assets/images/life-3-sm.png" alt="品味生活 食">
+                    </picture>
+                    <ul class="list-unstyled d-flex flex-column gap-1 mb-auto">
+                      <li><a href="#" class="fw-bold fs-lg-5 fw-lg-bolder">｜遠離喧囂,偶探巴塔哥尼亞終界</a></li>
+                      <li><a href="#" class="fw-bold fs-lg-5 fw-lg-bolder">｜東京深度六區,帶你細品極簡魅力</a></li>
+                      <li><a href="#" class="fw-bold fs-lg-5 fw-lg-bolder">｜專賣奇珍異寶的東歐地下夜市</a></li>
+                    </ul>
+                    <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5  text-center">View More<i
+                        class="bi bi-arrow-right ms-2"></i></a>
+                  </div>
+                </div>
+                <!-- swiper slide 4 -->
+                <div class="swiper-slide position-relative d-none d-lg-block">
+                  <div class="h-100 d-flex flex-column ">
+                    <h5 class="display-6 display-lg-5 text-primary-400">X.</h5>
+                    <picture>
+                      <source srcset="https://fakeimg.pl/392x232/" media="(min-width: 992px)">
+                      <img class="w-100 mb-5" src="https://fakeimg.pl/351x192/" alt="品味生活">
+                    </picture>
+                    <ul class="list-unstyled d-flex flex-column gap-1 mb-auto">
+                      <li><a href="#" class="fw-bold fs-lg-5 fw-lg-bolder">｜米其林三星主廚的那些絕活傳奇</a></li>
+                      <li><a href="#" class="fw-bold fs-lg-5 fw-lg-bolder">｜探秘成都的地道川味秘技與魅力</a></li>
+                      <li><a href="#" class="fw-bold fs-lg-5 fw-lg-bolder">｜義大利釀酒師對於酒的堅持執著</a></li>
+                    </ul>
+                    <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5  text-center">View More<i
+                        class="bi bi-arrow-right ms-2"></i></a>
+                  </div>
+                </div>
+                <!-- swiper slide 5 -->
+                <div class="swiper-slide position-relative d-none d-lg-block">
+                  <div class="h-100 d-flex flex-column ">
+                    <h5 class="display-6 display-lg-5 text-primary-400">X.</h5>
+                    <picture>
+                      <source srcset="https://fakeimg.pl/392x232/" media="(min-width: 992px)">
+                      <img class="w-100 mb-5" src="https://fakeimg.pl/351x192/" alt="品味生活">
+                    </picture>
+                    <ul class="list-unstyled d-flex flex-column gap-1 mb-auto">
+                      <li><a href="#" class="fw-bold fs-lg-5 fw-lg-bolder">｜米其林三星主廚的那些絕活傳奇</a></li>
+                      <li><a href="#" class="fw-bold fs-lg-5 fw-lg-bolder">｜探秘成都的地道川味秘技與魅力</a></li>
+                      <li><a href="#" class="fw-bold fs-lg-5 fw-lg-bolder">｜義大利釀酒師對於酒的堅持執著</a></li>
+                    </ul>
+                    <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5  text-center">View More<i
+                        class="bi bi-arrow-right ms-2"></i></a>
+                  </div>
+                </div>
+                <!-- swiper slide 6 -->
+                <div class="swiper-slide position-relative d-none d-lg-block">
+                  <div class="h-100 d-flex flex-column ">
+                    <h5 class="display-6 display-lg-5 text-primary-400">6.</h5>
+                    <picture>
+                      <source srcset="https://fakeimg.pl/392x232/" media="(min-width: 992px)">
+                      <img class="w-100 mb-5" src="https://fakeimg.pl/351x192/" alt="品味生活">
+                    </picture>
+                    <ul class="list-unstyled d-flex flex-column gap-1 mb-auto">
+                      <li><a href="#" class="fw-bold fs-lg-5 fw-lg-bolder">｜米其林三星主廚的那些絕活傳奇</a></li>
+                      <li><a href="#" class="fw-bold fs-lg-5 fw-lg-bolder">｜探秘成都的地道川味秘技與魅力</a></li>
+                      <li><a href="#" class="fw-bold fs-lg-5 fw-lg-bolder">｜義大利釀酒師對於酒的堅持執著</a></li>
+                    </ul>
+                    <a href="#" class="fs-5 link-accent-200 fw-bold py-1 my-5  text-center">View More<i
+                        class="bi bi-arrow-right ms-2"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- 今天又不知道要去哪裡了嗎？ -->
+      <section class="bg-primary-200">
+        <div class="container section text-center text-xl-start">
+          <div class="row">
+            <div class="col-xl-6 my-auto">
+              <h6 class="text-gray-400 mb-3 fs-lg-5">今天又不知道要去哪裡了嗎？</h6>
+              <div
+                class="mb-5 d-lg-flex align-items-lg-baseline justify-content-lg-center justify-content-xl-start mb-lg-6">
+                <picture>
+                  <source srcset="../assets/images/section-vivre.svg" media="(min-width: 768px)" width="100px">
+                  <img class="mx-auto mb-3 mx-lg-0 mb-lg-0 me-lg-2" src="../assets/images/section-vivre.svg" alt="">
+                </picture>
+                <h4 class="fs-lg-2">給你意想不到生活風格提案</h4>
+              </div>
+              <button class="btn btn-accent-200 fs-md-5 py-lg-3 px-lg-5" type="button">馬上訂閱<i
+                  class="bi bi-arrow-right ms-2"></i></button>
+            </div>
+            <div class="col-xl-6 mt-7 mt-xl-0">
+              <div class="swiper projectSwiper me-n2 me-md-0">
+                <div class="swiper-wrapper pt-5">
+                  <!-- slide 1 -->
+                  <div class="swiper-slide">
+                    <a href="#" class="hover-cover position-relative d-flex mt-xl-9">
+                      <span
+                        class="d-inline-block bg-white border border-accent-100 rounded-1 py-1 px-2 text-accent-300 position-absolute top-0 start-0 ms-3 translate-middle-y lh-sm z-1"><i
+                          class="bi bi-caret-right-fill"></i>人氣行程</span>
+                      <img class="w-100" src="../assets/images/projects-1.png" alt="projects-1">
+                      <p
+                        class="d-flex justify-content-between text-primary-100 position-absolute bottom-0 w-100 p-2 z-1 bg-gradient">
+                        <span>親子露營要帶什麼？</span><i class="bi bi-arrow-right"></i>
+                      </p>
+                    </a>
+                  </div>
+                  <!-- slide 2 -->
+                  <div class="swiper-slide">
+                    <a href="#" class="hover-cover position-relative d-flex">
+                      <span
+                        class="d-inline-block bg-white border border-accent-100 rounded-1 py-1 px-2 text-accent-300 position-absolute top-0 start-0 ms-3 translate-middle-y lh-sm z-1"><i
+                          class="bi bi-caret-right-fill"></i>人氣行程</span>
+                      <img class="w-100" src="../assets/images/projects-2.png" alt="projects-1">
+                      <p
+                        class="d-flex justify-content-between text-primary-100 position-absolute bottom-0 w-100 p-2 z-1 bg-gradient">
+                        <span>親子露營要帶什麼？</span><i class="bi bi-arrow-right"></i>
+                      </p>
+                    </a>
+                  </div>
+                  <!-- slide 3 -->
+                  <div class="swiper-slide mt-md-7">
+                    <a href="#" class="hover-cover position-relative d-flex">
+                      <span
+                        class="d-inline-block bg-white border border-accent-100 rounded-1 py-1 px-2 text-accent-300 position-absolute top-0 start-0 ms-3 translate-middle-y lh-sm z-1"><i
+                          class="bi bi-caret-right-fill"></i>人氣行程</span>
+                      <img class="w-100" src="../assets/images/projects-3.png" alt="projects-1">
+                      <p
+                        class="d-flex justify-content-between text-primary-100 position-absolute bottom-0 w-100 p-2 z-1 bg-gradient">
+                        <span>親子露營要帶什麼？</span><i class="bi bi-arrow-right"></i>
+                      </p>
+                    </a>
+                  </div>
+                  <!-- slide 4 -->
+                  <div class="swiper-slide mt-md-7">
+                    <a href="#" class="hover-cover position-relative d-flex mt-xl-n9">
+                      <span
+                        class="d-inline-block bg-white border border-accent-100 rounded-1 py-1 px-2 text-accent-300 position-absolute top-0 start-0 ms-3 translate-middle-y lh-sm z-1"><i
+                          class="bi bi-caret-right-fill"></i>人氣行程</span>
+                      <img class="w-100" src="../assets/images/projects-4.png" alt="projects-1">
+                      <p
+                        class="d-flex justify-content-between text-primary-100 position-absolute bottom-0 w-100 p-2 z-1 bg-gradient">
+                        <span>親子露營要帶什麼？</span><i class="bi bi-arrow-right"></i>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 由你決定 -->
+      <div class="text-center section d-lg-flex justify-content-lg-between text-lg-end">
+        <h4 class="mb-3 fs-lg-2">想看什麼主題由你決定！</h4>
+        <div>
+          <h5 class="mb-6 mb-lg-3 fs-lg-4 fw-bold">歡迎投稿與我們分享</h5>
+          <button class="btn btn-accent-200 fs-lg-5 py-lg-3 px-lg-5" type="button">聯絡我們</button>
+        </div>
+      </div>
+      <%- include('./layout/footer'); -%>
       </div>
     </main>
-    <div class="container">
-      <form class="row g-3 needs-validation" novalidate>
-        <div class="col-md-4">
-          <label for="validationCustom01" class="form-label">First name</label>
-          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-        </div>
-        <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">Last name</label>
-          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-        </div>
-        <div class="col-md-4">
-          <label for="validationCustomUsername" class="form-label">Username</label>
-          <div class="input-group has-validation">
-            <span class="input-group-text" id="inputGroupPrepend">@</span>
-            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
-              required>
-            <div class="invalid-feedback">
-              Please choose a username.
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <label for="validationCustom03" class="form-label">City</label>
-          <input type="text" class="form-control" id="validationCustom03" required>
-          <div class="invalid-feedback">
-            Please provide a valid city.
-          </div>
-        </div>
-        <div class="col-md-3">
-          <label for="validationCustom04" class="form-label">State</label>
-          <select class="form-select" id="validationCustom04" required>
-            <option selected disabled value="">Choose...</option>
-            <option>...</option>
-          </select>
-          <div class="invalid-feedback">
-            Please select a valid state.
-          </div>
-        </div>
-        <div class="col-md-3">
-          <label for="validationCustom05" class="form-label">Zip</label>
-          <input type="text" class="form-control" id="validationCustom05" required>
-          <div class="invalid-feedback">
-            Please provide a valid zip.
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-            <label class="form-check-label" for="invalidCheck">
-              Agree to terms and conditions
-            </label>
-            <div class="invalid-feedback">
-              You must agree before submitting.
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <button class="btn btn-primary" type="submit">Submit form</button>
-        </div>
-      </form>
-      <div class="mb-3">
-        <a href="" class="disabled">a tag</a>
-        <label for="exampleFormControlInput1" class="form-label disabled" disabled>Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" disabled>
-      </div>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Library</li>
-        </ol>
-      </nav>
-      <button class="btn btn-gray-100 btn-lg" type="button">按鈕</button>
-      <button class="btn btn-gray-100 btn-lg" type="button" disabled>按鈕</button>
-      <button class="btn btn-accent-200 btn-lg" type="button">按鈕</button>
-      <button class="btn btn-accent-200 btn-lg" type="button" disabled>按鈕</button>
-      <button class="btn btn-accent-200" type="button">按鈕</button>
-      <button class="btn btn-accent-200 btn-sm" type="button">按鈕</button>
-      <br>
-      <a href="#" class="fs-6">
-        <span class="badge fs-6">秘境尋蹤</span>
-      </a>
-      <h2 class="fs-2">熱門主題</h2>
-      <div class="row row-cols-1 row-cols-lg-4 gy-1 gy-lg-4">
-        <div class="col">
-          <picture>
-            <source srcset="../assets/images/theme-1.png" media="(min-width: 992px)">
-            <img class="w-100 rounded-top-left rounded-bottom-right" src="../assets/images/theme-1-sm.png" alt="形象圖">
-          </picture>
-          <h5>城市漫遊者</h5>
-        </div>
-        <div class="col">
-          <picture>
-            <source srcset="../assets/images/theme-1.png" media="(min-width: 992px)">
-            <img class="w-100" src="../assets/images/theme-1-sm.png" alt="秘境尋蹤人 形象圖">
-          </picture>
-          <h5>秘境尋蹤人</h5>
-        </div>
-        <div class="col">
-          <picture>
-            <source srcset="../assets/images/theme-1.png" media="(min-width: 992px)">
-            <img class="w-100" src="../assets/images/theme-1-sm.png" alt="品味設計家 形象圖">
-          </picture>
-          <h5>品味設計家</h5>
-        </div>
-        <div class="col">
-          <picture>
-            <source srcset="../assets/images/theme-1.png" media="(min-width: 992px)">
-            <img class="w-100" src="../assets/images/theme-1-sm.png" alt="美食探險記 形象圖">
-          </picture>
-          <h5>美食探險記</h5>
-        </div>
-        <div class="col">
-          <picture>
-            <source srcset="../assets/images/theme-1.png" media="(min-width: 992px)">
-            <img class="w-100" src="../assets/images/theme-1-sm.png" alt="美學建築誌 形象圖">
-          </picture>
-          <h5>美學建築誌</h5>
-        </div>
-        <div class="col">
-          <picture>
-            <source srcset="../assets/images/theme-1.png" media="(min-width: 992px)">
-            <img class="w-100" src="../assets/images/theme-1-sm.png" alt="慢活生活行 形象圖">
-          </picture>
-          <h5>慢活生活行</h5>
-        </div>
-        <div class="col">
-          <picture>
-            <source srcset="../assets/images/theme-1.png" media="(min-width: 992px)">
-            <img class="w-100" src="../assets/images/theme-1-sm.png" alt="工藝匠心賞 形象圖">
-          </picture>
-          <h5>工藝匠心賞</h5>
-        </div>
-        <div class="col">
-          <picture>
-            <source srcset="../assets/images/theme-1.png" media="(min-width: 992px)">
-            <img class="w-100" src="../assets/images/theme-1-sm.png" alt="時尚先鋒派 形象圖">
-          </picture>
-          <h5>時尚先鋒派</h5>
-        </div>
-      </div>
-    </div>
+    <script type="module" src="../main.js"></script>
+    <!-- jQuery  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      // 精選文章:
+      var swiper = new Swiper(".articleSwiper", {
+        // 一次呈現幾張,
+        slidesPerView: 1.1,
+        // 一個群組內有幾張投影片,
+        slidesPerGroup: 1,
+        spaceBetween: 24,
 
-    <%- include('./layout/footer'); -%>
-      <%- include('./layout/jQuery'); -%>
-        <script type="module" src="../main.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script>
-          // init Swiper:
-          const swiper = new Swiper(".swiper", {
-            // 一次呈現幾張,
-            slidesPerView: 1.1,
-            // 一個群組內有幾張投影片,
-            slidesPerGroup: 1,
-            spaceBetween: 24,
+        navigation: {
+          nextEl: ".article .swiper-next",
+          prevEl: ".article .swiper-prev",
+        },
+        // 分頁,
+        pagination: {
+          el: ".article .swiper-pagination-custom",
+          type: "fraction",
+        },
+        grid: {
+          rows: 1,
+          fill: 'row',
+        },
+        breakpoints: {
+          992: {
+            slidesPerView: 2,
+            spaceBetween: 48,
+          }
+        }
+      });
+      // 大家都在看
+      var swiper = new Swiper(".defaultSwiper", {
+        // 一次呈現幾張,
+        slidesPerView: 1.1,
+        // 一個群組內有幾張投影片,
+        slidesPerGroup: 1,
+        spaceBetween: 24,
+        // autoplay: {
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // },
+        loop: true,
+        breakpoints: {
+          768: {
+            slidesPerView: 1.5,
+          },
+          992: {
+            slidesPerView: 2.2,
+          }
+        }
 
-            navigation: {
-              nextEl: ".swiper-next",
-              prevEl: ".swiper-prev",
+      });
+      // 今天又不知道要去哪裡了嗎？
+      var swiper = new Swiper(".projectSwiper", {
+        // 一次呈現幾張,
+        slidesPerView: 1.17,
+        // 一個群組內有幾張投影片,
+        slidesPerGroup: 1,
+        spaceBetween: 24,
+        grid: {
+          rows: 1,
+          fill: 'row',
+        },
+        // autoplay: {
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // },
+        loop: true,
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            grid: {
+              rows: 2,
             },
-            // 分頁,
-            pagination: {
-              el: ".swiper-pagination-custom",
-              type: "fraction",
-            },
-            breakpoints: {
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 48,
-              }
-            }
-          });
+          }
+        }
+      });
+      // 品味生活
+      var swiper = new Swiper(".lifeSwiper", {
+        // 一次呈現幾張,
+        slidesPerView: 1,
+        // 一個群組內有幾張投影片,
+        slidesPerGroup: 1,
+        spaceBetween: 24,
 
-        </script>
+        navigation: {
+          nextEl: ".life .swiper-next",
+          prevEl: ".life .swiper-prev",
+        },
+        // 分頁,
+        // pagination: {
+        //   el: ".life .swiper-pagination-custom",
+        //   type: "fraction",
+        // },
+        grid: {
+          rows: 3,
+          fill: 'row',
+        },
+        breakpoints: {
+          992: {
+            slidesPerView: 2,
+            grid: {
+              rows: 2,
+            },
+          },
+          1200: {
+            slidesPerView: 3,
+            grid: {
+              rows: 1,
+            },
+          }
+        }
+      });
+    </script>
 </body>
 
 </html>
